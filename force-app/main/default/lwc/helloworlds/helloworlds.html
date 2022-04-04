@@ -1,0 +1,113 @@
+<template>
+  <!--
+  <div class="particles-js">
+    <canvas class="particles-js-canvas-el"></canvas>
+  </div>  
+  -->
+  <div
+    class="slds-grid slds-wrap top-con"
+    onscroll={handlescroll}
+    data-id="hello"
+  >
+    <div class="slds-col slds-size_1-of-1 slds-large-size_9-of-12 hide-leak">
+      <div class="top-container">
+        <div class="particles-js parallax" style={translateval}>
+          <canvas class="particles-js-canvas-el"></canvas>
+        </div>
+      </div>
+      <div class="onImageText">
+        <H1 class="name"> I'm Akash</H1>
+        <p class="greeting">Nice to meet you</p>
+      </div>
+    </div>
+    <div
+      class="
+        slds-col
+        slds-size_1-of-1
+        slds-large-size_3-of-12
+        parallaxInfo
+        curved-line
+      "
+    >
+      <div class="slds-grid slds-grid_vertical">
+        <div class="slds-col">
+          <c-profile-image1
+          imgheighht = "9rem"
+          imgwidtth = "9rem"
+          ></c-profile-image1>
+        </div>
+        <div class="slds-col">
+          <article class="slds-card slds-m-bottom_medium">
+            <div class="slds-card__header slds-grid slds-assistive-text"></div>
+            <div
+              class="
+                slds-card__body slds-card__body_inner
+                slds-align_absolute-center
+              "
+            >
+              <span class="boldChar"> Akash </span>
+            </div>
+          </article>
+        </div>
+        <div class="slds-col">
+          <article class="slds-card slds-m-bottom_medium">
+            <div class="slds-card__header slds-grid slds-assistive-text"></div>
+            <div
+              class="
+                slds-card__body slds-card__body_inner
+                slds-align_absolute-center
+              "
+            >
+              <span class="userinfo">
+                BE Electronics and Communications, Software Engineer
+              </span>
+            </div>
+          </article>
+        </div>
+        <div class="slds-col">
+          <article class="slds-card slds-m-bottom_medium">
+            <div class="slds-card__header slds-grid slds-assistive-text"></div>
+            <div
+              class="
+                slds-card__body slds-card__body_inner
+                slds-align_absolute-center
+              "
+            >
+              <span class="userinfo">
+                akashmd.salesforce@gmail.com 7892742934
+              </span>
+            </div>
+          </article>
+        </div>
+        <div class="slds-col">
+          <article class="slds-card slds-m-bottom_medium">
+            <div class="slds-card__header slds-grid slds-assistive-text"></div>
+            <div
+              class="
+                slds-card__body slds-card__body_inner
+                slds-align_absolute-center
+              "
+            >
+              <ul
+                class="slds-list_horizontal slds-has-inline-block-links_space"
+              >
+                <li>
+                  <a class="userinfo" href="#">Item 1</a>
+                </li>
+                <li>
+                  <a class="userinfo" href="#">List Item</a>
+                </li>
+                <li>
+                  <a class="userinfo" href="#">List Item</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <div class="slds-col">
+          <!--<c-site-header></c-site-header>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

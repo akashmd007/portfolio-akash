@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <name>FlexiPage</name>
+    <members>Home_Page_Default</members>
+    <members>Portfolio_page</members>
+  </types>
+  <types>
+    <name>LightningComponentBundle</name>
+    <members>aboutSection</members>
+    <members>educationExp</members>
+    <members>helloworld</members>
+    <members>profileImage</members>
+  </types>
+  <types>
+    <name>StaticResource</name>
+    <members>ProfileImages</members>
+  </types>
+  <types>
+    <name>CustomTab</name>
+    <members>standard-home</members>
+  </types>
+  <version>52.0</version>
+</Package>

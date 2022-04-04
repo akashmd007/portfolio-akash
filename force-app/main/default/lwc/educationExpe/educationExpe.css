@@ -1,0 +1,11 @@
+.builderSettings {
+    background-color: white;
+}
+
+.text-color {
+    color: rgb(85,105,220);
+}
+
+.heading {
+    font: italic normal normal 2rem/4rem 'playfair display',serif;    
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>  
+        <targetConfig targets="lightning__HomePage,lightning__AppPage, lightningCommunity__Default">
+            <property name="backgroundImage" type="String" default="https://salesforcefactory.com/wp-content/uploads/2018/10/Image3.jpg" label="Enter background Image URL"/>
+            <property name="minHeight" type="String" default="100" label="Min Height"/>
+            <property name="backgroundPositionX" type="String" default="-100" label="Position X Desktop"/>
+            <property name="backgroundPositionY" type="String" default="10" label="Position Y Desktop"/>
+            <property name="backgroundPosXMobPor" type="String" default="-1920" label="Position X Mobile Portrait"/>
+            <property name="backgroundPosYMobPor" type="String" default="-720" label="Position Y Mobile Portrait"/> 
+
+            <property name="backgroundPosXMobLan" type="String" default="0" label="Position X Mobile Landscape"/>
+            <property name="backgroundPosYMobLan" type="String" default="0" label="Position Y Mobile Landscape"/>                        
+
+            <property name="imageScrubSpeed" type="String" default="1" label="Image Scrub Velocity and direction"/>
+            <property name="opacity" type="String" default="0.8" label="Enter Opacity"/>            
+            <property name="scale" type="String" default="1" label="Enter Scale Mobile"/>
+            <property name="imgScale" type="String" default="cover" label="Image Scale Type" datasource="contain, cover"/>            
+            <property name="tabScale" type="String" default="1" label="Enter Scale Tab"/>
+            <property name="deskScale" type="String" default="1.01" label="Enter Scale Desktop"/>
+        </targetConfig>
+    </targetConfigs>    
+</LightningComponentBundle>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>  
+        <targetConfig targets="lightning__HomePage,lightning__AppPage">
+            <property name="backgroundImage" type="String" default="https://www.salesforce.com/content/dam/web/en_us/www/images/commerce-cloud/b2b-commerce-page/AlpineGroup-ipad-mobile.png" label="Enter background Image URL"/>
+            <property name="minHeight" type="String" default="100" label="Min Height"/>
+            <property name="backgroundPositionX" type="String" default="40" label="Position X"/>
+            <property name="backgroundPositionY" type="String" default="100" label="Position Y"/>
+            <property name="imageScrubSpeed" type="String" default="-1.2" label="Image Scrub Velocity and direction"/>
+            <property name="opacity" type="String" default="0.45" label="Enter Opacity"/>            
+            <property name="scale" type="String" default="1.5" label="Enter Scale"/>
+            <property name="imgScale" type="String" default="contain" label="Image Scale Type" datasource="contain, cover"/>            
+        </targetConfig>
+    </targetConfigs>    
+</LightningComponentBundle>

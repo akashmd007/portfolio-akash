@@ -1,0 +1,30 @@
+:host {
+
+}
+
+.pop {
+    animation: logo-pop 0.7s;
+    border: 1px solid #eae0e0;
+}
+
+@keyframes logo-pop {
+    0% {
+        transform: scale(0.1);
+    }
+    60%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.slds-card {    
+    border-style : none;
+    border-color : none;
+    box-shadow : none;
+}
+.sz-large {
+    width : var(--imgWidth);
+    height : var(--imgHeight);
+}

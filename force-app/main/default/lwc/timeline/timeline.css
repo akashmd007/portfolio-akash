@@ -1,0 +1,51 @@
+/* cssSharingComponent.css */
+@import "c/cssCommon";
+
+.timeline-Card {
+  animation: card-stack 0.6s;
+  visibility: visible !important;
+}
+
+@keyframes card-stack {
+  0% {
+    transform: translateX(-100px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.designation {
+  color: rgb(85, 105, 220);
+  font-family: "Salesforce Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: 24px;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.slds-timeline__item_expandable:before{
+    left: 3rem;
+}
+
+.cool-card {
+    background-color: white;
+    border: 0;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;    
+    position: relative;
+    left: -1.5rem;
+    top: 1rem; 
+    margin-bottom: 5rem;   
+}
+
+.stack-card {
+    position: sticky;
+    top : 0;
+    transform-origin: center top;
+    height: 25rem;
+}

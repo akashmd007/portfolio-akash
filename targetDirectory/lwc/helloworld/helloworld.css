@@ -1,0 +1,121 @@
+:host {             
+    --sds-c-card-color-background:rgb(85,105,220);
+    --lwc-squareIconLargeBoundary :9rem;
+    --white-color : rgb(255, 255, 255);
+  }
+
+.slds-card {    
+    border-style : none;
+    border-color : none;
+    box-shadow : none;
+}
+
+.top-container {
+    overflow: hidden;
+    height: 31rem;
+    background-color: rgb(33,51,87);
+    transform : var(--scale);
+}
+
+.hide-leak {
+    overflow: hidden;
+}
+
+.onImageText {
+    position : absolute;
+    bottom: 1rem;
+    left: 2rem;    
+}
+.name {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color : var(--white-color);
+}
+
+.greeting {
+    line-height: 0.9em;
+    font: normal normal bold 40px/1.4rem playfairdisplay-bold,'playfair display',serif;
+    font-weight: bold;   
+    color : var(--white-color); 
+}
+
+.parallaxComp {
+    display : flex;
+}
+.parallaxImg {
+
+}
+
+.parallaxInfo {
+    background-color: rgb(85,105,220);
+    min-height: 31rem;
+}
+
+.boldChar {
+    font: italic normal normal 32px/1.4em 'playfair display',serif;
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+}
+
+.parallax {
+    /* The image used */
+    background-image: var(--backgroundImage);
+    min-height: var(--minHeight); 
+    opacity: var(--opacity);    
+    
+    transform : translate3d(0px, 0px, 0px);
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position-X: -25px;
+    background-position-Y : 120px;
+    background-repeat: no-repeat;
+    background-size: var(--imgScale);
+    
+  }
+
+  .userinfo {
+    color : white;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.02rem;
+    font-family: futura-lt-w01-light,sans-serif;
+  }
+
+  @media all and (min-width: 30rem) { 
+
+    .greeting {
+        line-height: 0.9em;               
+        font: normal normal bold 60px/2rem playfairdisplay-bold,'playfair display',serif;
+        font-weight: bold;   
+        color : var(--white-color); 
+    }
+    .onImageText {                
+        left: 2rem;    
+    }
+/*
+    .parallax { 
+        background-position-Y : 150px;
+        background-size: cover;
+    }
+    */
+  }
+
+  @media all and (min-width: 64rem) { 
+
+    .greeting {
+        line-height: 0.9em;              
+        font: normal normal bold 88px/4rem playfairdisplay-bold,'playfair display',serif;
+        font-weight: bold;   
+        color : var(--white-color); 
+    }
+    .onImageText {
+        left: 9rem;    
+    }
+    .parallax { 
+        background-position-X: var(--backgroundPositionX);
+        background-position-Y : var(--backgroundPositionY);        
+    }
+  }

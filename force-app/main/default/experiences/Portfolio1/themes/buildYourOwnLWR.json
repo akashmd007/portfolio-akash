@@ -1,0 +1,77 @@
+{
+  "activeBrandingSetId" : "d65a3bdb-7bdb-45b5-87bc-67c40d9d2114",
+  "customCSS" : "",
+  "developerName" : "byo",
+  "id" : "44197227-2808-4476-b977-87d3b8d41be9",
+  "label" : "Build Your Own (LWR)",
+  "layouts" : {
+    "Inner" : "e181b9b7-1d12-45c5-8c30-c90b9d824189",
+    "ServiceNotAvailable" : "4f550750-bf4e-49c7-ab1b-7a0b25114cb4"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : { },
+    "componentName" : "community_byo:scopedHeaderAndFooter",
+    "id" : "e181b9b7-1d12-45c5-8c30-c90b9d824189",
+    "label" : "Scoped Header and Footer",
+    "regions" : [ {
+      "components" : [ {
+        "componentAttributes" : {
+          "sectionConfig" : "{\"UUID\":\"aaeb6b2c-7bef-4bac-93c6-8a08682ac04f\",\"columns\":[{\"UUID\":\"b3ea66cc-332f-4e34-8d63-8b6b4d639afb\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+        },
+        "componentName" : "community_layout:section",
+        "id" : "aaeb6b2c-7bef-4bac-93c6-8a08682ac04f",
+        "regions" : [ {
+          "id" : "b3ea66cc-332f-4e34-8d63-8b6b4d639afb",
+          "regionLabel" : "Theme Header",
+          "regionName" : "headerSection",
+          "renditionMap" : { },
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "scopedBrandingSetId" : null,
+        "type" : "component"
+      } ],
+      "id" : "dc3e0261-9976-485c-8efd-78441ca77240",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "sectionConfig" : "{\"UUID\":\"8458e82e-c6a1-4a12-bcfd-cf5dc1b0356a\",\"columns\":[{\"UUID\":\"d2803ce4-c919-48c0-b27a-1f4978132028\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+        },
+        "componentName" : "community_layout:section",
+        "id" : "8458e82e-c6a1-4a12-bcfd-cf5dc1b0356a",
+        "regions" : [ {
+          "id" : "d2803ce4-c919-48c0-b27a-1f4978132028",
+          "regionLabel" : "Theme Footer",
+          "regionName" : "footerSection",
+          "renditionMap" : { },
+          "type" : "region"
+        } ],
+        "renditionMap" : { },
+        "scopedBrandingSetId" : null,
+        "type" : "component"
+      } ],
+      "id" : "a0cab916-b51f-4977-a6ad-723fd545d4c8",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : { },
+    "componentName" : "community_layout:simpleThemeLayout",
+    "id" : "4f550750-bf4e-49c7-ab1b-7a0b25114cb4",
+    "label" : "Service Not Available Theme Layout",
+    "regions" : [ {
+      "id" : "d0a9f6af-d5a1-4df9-8066-b707e8d44818",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "bc5c2926-4c9e-466e-bd63-f3e71d0543bd",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

@@ -1,0 +1,19 @@
+:host {
+
+}
+
+.customStyle {
+    height : 2rem;
+    width : 2rem;
+    background-color: var(--testProp);
+}
+
+@media all and (min-width: 30rem) { 
+
+    .customStyle {
+        height : 10rem;
+        width : 10rem;
+        background-color: var(--testProp);
+    }
+
+}

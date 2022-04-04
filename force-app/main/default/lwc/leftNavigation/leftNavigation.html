@@ -1,0 +1,49 @@
+<template>
+    <div class="left-navigation">
+        <nav class="slds-nav-vertical slds-nav-vertical_shade" aria-label="Sub page">
+          <div class="slds-nav-vertical__section">
+             
+           <div class="vertical-center-end">
+            <span class="slds-icon_large slds-icon_container slds-icon-utility-close" onclick={toggle} title="Close">
+              <svg class="slds-icon_large slds-icon slds-icon-text-default" style="fill : white" aria-hidden="true">
+                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#close"></use>
+              </svg>
+              <span class="slds-assistive-text">Close</span>
+            </span>           
+          </div> 
+
+            <ul aria-describedby="entity-header">
+              <li class="slds-nav-vertical__item slds-is-active">
+                <a class="slds-nav-vertical__action" onclick={scrollToSection} data-section="about" aria-current="true">About</a>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <a class="slds-nav-vertical__action" onclick={scrollToSection} data-section="edu" >Education & Experience</a>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <a href="#" class="slds-nav-vertical__action">Private Reports</a>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <a href="#" class="slds-nav-vertical__action">Public Reports</a>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <a href="#" class="slds-nav-vertical__action">All Reports</a>
+              </li>
+            </ul>
+          </div>
+          <div class="slds-nav-vertical__section">
+            <h2 id="folder-header" class="slds-nav-vertical__title">Folders</h2>
+            <ul aria-describedby="folder-header">
+              <li class="slds-nav-vertical__item">
+                <a href="#" class="slds-nav-vertical__action">Created by Me</a>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <a href="#" class="slds-nav-vertical__action">Shared with Me</a>
+              </li>
+              <li class="slds-nav-vertical__item">
+                <a href="#" class="slds-nav-vertical__action">All Reports</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+</template>

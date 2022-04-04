@@ -1,0 +1,98 @@
+{
+  "appPageId" : "bcf496b4-152e-4f07-ac44-e18e764b5487",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "id" : "246abb19-444f-4612-a378-f322144af271",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "sectionConfig" : "{\"UUID\":\"32263e70-e04b-4e19-9e2e-1fb6d6ae39c4\",\"columns\":[{\"UUID\":\"3ee8b2e5-8311-475f-a5e8-82758fd881e8\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "32263e70-e04b-4e19-9e2e-1fb6d6ae39c4",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundImage" : "https://salesforcefactory.com/wp-content/uploads/2018/10/Image3.jpg",
+            "backgroundPosXMobLan" : "0",
+            "backgroundPosXMobPor" : "-1920",
+            "backgroundPosYMobLan" : "0",
+            "backgroundPosYMobPor" : "-720",
+            "backgroundPositionX" : "-100",
+            "backgroundPositionY" : "10",
+            "deskScale" : "1.01",
+            "imageScrubSpeed" : "1",
+            "imgScale" : "cover",
+            "minHeight" : "100",
+            "opacity" : "0.8",
+            "scale" : "1",
+            "tabScale" : "1"
+          },
+          "componentName" : "c:helloworlds",
+          "id" : "b2e1415b-20dd-4780-9249-94762fc1b88b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "c:timeline",
+          "id" : "f110640b-e420-43a9-8794-40d533e885b3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bgColor" : "white",
+            "desktopHeight" : "26"
+          },
+          "componentName" : "c:aboutSection",
+          "id" : "995b1d34-05cd-458e-863e-af368a0018b7",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<div style=\"display: flex; justify-content: center; align-items: center; margin: 50px 0; flex-direction: column; text-align: center;\"><div style=\"background-image: url(assets/img/desert.svg); background-size: cover; background-position: center; height: 300px; width: 100%; max-width: 600px; min-width: 300px;\"></div><h1 class=\"slds-text-heading_medium slds-p-bottom_x-small\">Start Building Your Page</h1> <div>Drag and drop a component into the content slots.</div></div>"
+          },
+          "componentName" : "community_builder:htmlEditor",
+          "id" : "471d1ed8-08f4-44eb-b3cb-53464f836d66",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3ee8b2e5-8311-475f-a5e8-82758fd881e8",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "9e2cefb9-aa3f-4330-a415-90d947572018",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "pageTitle" : "Home",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "3503c49a-f8e4-4484-bfe0-38fc47f524fd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "affe8198-f360-4d53-bfd1-92d35c63cb21",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

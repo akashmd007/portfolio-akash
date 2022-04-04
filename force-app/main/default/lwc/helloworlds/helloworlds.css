@@ -1,0 +1,205 @@
+:host {             
+    --sds-c-card-color-background: #3366a2;  
+    --white-color : rgb(255, 255, 255);    
+  }
+
+.particles-js {
+    /*background-color: rgb(0, 0, 0);
+    background-image: url(https://salesforcefactory.com/wp-content/uploads/2018/10/Image3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;*/
+ }
+
+.particles-js-canvas-el {
+width : 100%;
+height : 100vh;
+}
+
+.slds-card {    
+    border-style : none;
+    border-color : none;
+    box-shadow : none;
+}
+
+.slds-avatar--large, .slds-avatar_large {
+    width: var(--lwc-squareIconLargeBoundary,3rem);
+    height: var(--lwc-squareIconLargeBoundary,3rem);
+}
+
+.top-container {
+    overflow: hidden;
+    /*height: 100vh;31rem;*/
+    background-color: rgb(33,51,87);
+    transform : var(--scale);
+}
+
+.hide-leak {
+    height: var(--portraitMobheight); /*calc(var(--heightu) / 2); */
+    overflow: hidden; 
+    position: relative;
+}
+
+.onImageText {
+    position : absolute;
+    bottom: calc(1rem + var(--offsetLandScape));
+    left: 1rem;    
+}
+.name {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    color : var(--white-color);
+}
+
+.greeting {
+    line-height: 0.9em;
+    font: normal normal bold 40px/1.4rem playfairdisplay-bold,'playfair display',serif;
+    font-weight: bold;   
+    color : var(--white-color); 
+}
+
+.parallaxComp {
+    display : flex;
+}
+.parallaxImg {
+
+}
+
+.top-con {   
+    background-color: #fff;    
+    border-radius: 25%;
+    box-shadow: 0 25px 64px 0 rgb(100 100 111 / 75%);
+    position: relative;    
+    /*top: 1rem;*/
+    margin-bottom: 5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallaxInfo {
+    height: var(--portraitMobheight); /*calc(var(--heightu) / 2);*/
+    background-color: #3366a2;
+    min-height: 100%;/*31rem;*/
+}
+
+.boldChar {
+    font: italic normal normal 32px/1.4em 'playfair display',serif;
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+}
+
+.parallax {
+    /* The image used */
+    background-image: var(--backgroundImage);
+    min-height: var(--minHeight); 
+    opacity: var(--opacity);    
+    
+    /*transform : translate3d(0px, 0px, 0px);*/
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position-X: var(--backgroundPosXMobLan);
+    background-position-Y : var(--backgroundPosYMobLan);
+    background-repeat: no-repeat;
+    background-size: var(--imgScale);
+    /*background-attachment: scroll;    */
+  }
+
+  .userinfo {
+    color : white;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.02rem;
+    font-family: futura-lt-w01-light,sans-serif;
+  }
+
+  @media all and (max-width: 30rem) and (orientation:portrait) { 
+    .hide-leak {
+        height: var(--portraitMobheight);
+    } 
+    
+    .parallax {
+    background-attachment: scroll;
+    background-position-X: var(--backgroundPosXMobPor);
+    background-position-Y : var(--backgroundPosYMobPor);  
+    } 
+  }
+
+  @media all and (max-width: 30rem) and (orientation:landscape) { 
+    .hide-leak {
+        height: var(--portraitMobheight);
+    }     
+  }  
+
+
+  @media all and (min-width: 30rem) { 
+
+    .greeting {
+        line-height: 0.9em;               
+        font: normal normal bold 60px/2rem playfairdisplay-bold,'playfair display',serif;
+        font-weight: bold;   
+        color : var(--white-color); 
+    }
+    .onImageText {                
+        left: 2rem;    
+    }
+
+    .hide-leak {
+        height: var(--portraitMobheight);
+        max-height: 450px;
+        min-height: 300px; /* var(--portraitMobheight);  450px;*/
+    }  
+    
+    .top-container {
+        transform : var(--tabScale);
+    }  
+    
+    .parallaxInfo {
+        height: var(--portraitMobheight);
+        max-height: 450px;
+        min-height: 300px; /*var(--maxbottomheight);*/
+    }
+/*
+    .parallax { 
+        background-position-Y : 150px;
+        background-size: cover;
+    }
+    */
+  }
+
+  @media all and (min-width: 64rem) and (orientation: landscape) { 
+
+    .greeting {
+        line-height: 0.9em;              
+        font: normal normal bold 88px/4rem playfairdisplay-bold,'playfair display',serif;
+        font-weight: bold;   
+        color : var(--white-color); 
+    }
+
+    .onImageText {
+        left: 8rem;    
+    }
+
+    .parallax { 
+        background-position-X: var(--backgroundPositionX);
+        background-position-Y : var(--backgroundPositionY);        
+    }
+
+    .hide-leak {
+        height: var(--heightu);
+        max-height: 580px;
+        min-height: 500px;
+    } 
+    
+    .top-container {
+        transform : var(--deskScale);
+    } 
+    
+    .parallaxInfo {
+        height: var(--heightu);
+        max-height: 580px;
+        min-height: 500px;
+    }
+  }
